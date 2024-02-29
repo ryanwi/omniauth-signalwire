@@ -11,7 +11,7 @@ RSpec.describe OmniAuth::Strategies::SignalWire do
     end
 
     it "has the correct authorization url" do
-      expect(strategy.client.options[:authorize_url]).to eq("/login/oauth/authorize")
+      expect(strategy.client.options[:authorize_url]).to eq("https://id.fabric.signalwire.com/login/oauth/authorize")
     end
   end
 end
