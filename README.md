@@ -2,7 +2,7 @@
 
 # OmniAuth SignalWire
 
-This is the official OmniAuth strategy for authenticating to SignalWire.
+This is an OmniAuth strategy for authenticating to SignalWire.
 
 ## Basic Usage
 
