@@ -1,4 +1,4 @@
-![Ruby](https://github.com/ryanwi/omniauth-signalwire/workflows/Ruby/badge.svg?branch=main)
+[![Ruby](https://github.com/ryanwi/omniauth-signalwire/actions/workflows/ruby.yml/badge.svg)](https://github.com/ryanwi/omniauth-signalwire/actions/workflows/ruby.yml)
 
 # OmniAuth SignalWire
 
