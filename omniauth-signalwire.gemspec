@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/omniauth-signalwire/version"
+require File.expand_path("lib/omniauth-signalwire/version", __dir__)
 
 Gem::Specification.new do |spec|
   spec.authors = ["SignalWire Team"]
