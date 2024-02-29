@@ -11,13 +11,14 @@ Gem::Specification.new do |spec|
   spec.name = "omniauth-signalwire"
   spec.license = "MIT"
 
-  spec.files         = `git ls-files`.split("\n")
+  spec.files = `git ls-files`.split("\n")
   spec.require_paths = ["lib"]
   spec.version = OmniAuth::SignalWire::VERSION
-
   spec.required_ruby_version = ">= 2.7"
-  # spec.metadata["homepage_uri"] = spec.homepage
-  # spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
+
+  # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = "https://github.com/signalwire/omniauth-signalwire"
   # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
@@ -28,9 +29,8 @@ Gem::Specification.new do |spec|
   #       f.start_with?(*%w[bin/ test/ spec/ features/ .git appveyor Gemfile])
   #   end
   # end
-
-  # spec.bindir = "exe"
-  # spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.bindir = "exe"
+  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
 
   spec.add_dependency "omniauth", "~> 2.0"
   spec.add_dependency "omniauth-oauth2", "~> 1.8"
