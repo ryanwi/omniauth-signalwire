@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - yyyy-mm-dd
 
+## [0.2.1] - 2024-02-29
+
+### Fixed
+
+- Fix `changelog_uri` in gemspec
 
 ## [0.2.0] - 2024-02-29
 

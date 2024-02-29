@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/ryanwi/omniauth-signalwire"
-  spec.metadata["changelog_uri"] = "https://github.com/ryanwi/omniauth-signalwire/CHANGELOG.md"
+  spec.metadata["changelog_uri"] = "https://github.com/ryanwi/omniauth-signalwire/blob/main/CHANGELOG.md"
 
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
