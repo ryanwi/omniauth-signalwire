@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "omniauth-oauth2"
+require 'debug'
 
 module OmniAuth
   module Strategies
@@ -39,6 +40,14 @@ module OmniAuth
 
       def raw_info
         @raw_info ||= access_token.get("/subscriber/info").parsed
+      end
+
+      protected
+
+      def build_access_token
+        binding.break
+        verifier = request.params["code"]
+        client.auth_code.get_token(verifier, {:redirect_uri => callback_url}.merge(token_params.to_hash(:symbolize_keys => true)), deep_symbolize(options.auth_token_params))
       end
     end
   end
