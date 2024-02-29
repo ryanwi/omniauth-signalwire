@@ -1,3 +1,5 @@
+![Ruby](https://github.com/ryanwi/omniauth-signalwire/workflows/Ruby/badge.svg?branch=main)
+
 # OmniAuth SignalWire
 
 This is the official OmniAuth strategy for authenticating to SignalWire.
