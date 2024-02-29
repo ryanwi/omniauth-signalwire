@@ -16,19 +16,28 @@ An example auth hash available in `request.env['omniauth.auth']`:
 ```
 {
   :provider => "signalwire",
-  :uid => "",
+  :uid => "4d1bcf6e-88ed-4cfa-87bb-b986cd65678e",
   :info => {
-    :email => "",
-    :first_name => "",
-    :last_name => "",
+    :email => "user@example.com",
+    :first_name => "Jane",
+    :last_name => "Doe",
+    :display_name => "Jane Doe",
+    ...
   },
   :credentials => {
     :token => "a1b2c3d4...", # The OAuth 2.0 access token
+    :refresh_token => "2QY...",
+    :expires_at => 1709194759,
+    :expires => true
   },
-  :extra = {}
+  :extra = {
+    :raw_info => {
+      ...
+    }
+  }
 }
 ```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/omniauth-signalwire.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ryanwi/omniauth-signalwire.
