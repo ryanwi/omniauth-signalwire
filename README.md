@@ -4,11 +4,29 @@
 
 This is an OmniAuth strategy for authenticating to SignalWire.
 
+## Installation
+
+```ruby
+gem 'omniauth-signalwire', '~> 0.1'
+```
+
 ## Basic Usage
 
-    use OmniAuth::Builder do
-      provider :signalwire, ENV['SIGNALWIRE_KEY'], ENV['SIGNALWIRE_SECRET']
-    end
+```ruby
+  use OmniAuth::Builder do
+    provider :signalwire, ENV['SIGNALWIRE_KEY'], ENV['SIGNALWIRE_SECRET']
+  end
+```
+
+## Basic Usage Rails
+
+In `config/initializers/signalwire.rb`
+
+```ruby
+  Rails.application.config.middleware.use OmniAuth::Builder do
+    provider :signalwire, ENV['SIGNALWIRE_KEY'], ENV['SIGNALWIRE_SECRET']
+  end
+```
 
 ## Authentication Hash
 An example auth hash available in `request.env['omniauth.auth']`:
